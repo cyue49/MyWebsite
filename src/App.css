@@ -19,6 +19,28 @@
     .center-of-div {
         @apply flex justify-center items-center;
     }
+
+    /* Appear from top animation */
+    .appear-animation {
+        animation: appear-in 1s ease;
+    }
+
+    @keyframes appear-in {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        90% {
+            opacity: 0.9;
+            transform: translateY(10%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 }
 
 @layer utilities {

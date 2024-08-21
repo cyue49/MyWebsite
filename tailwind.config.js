@@ -11,6 +11,9 @@ module.exports = {
                 lightColor: '#cdcdcd'
             }
         },
+        fontFamily: {
+            'sans': 'Helvetica, Arial, sans-serif'
+        }
     },
     plugins: [],
 }
