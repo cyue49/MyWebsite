@@ -18,9 +18,9 @@ const ContentItem = ({ label, page }) => {
 
             <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
                 <div className="fixed inset-0 w-screen center-of-div bg-darkColor/70 p-4 overflow-auto no-scrollbar">
-                    <DialogPanel className="w-[95vw] h-[90vh] rounded-3xl border border-lightColor bg-darkColor overflow-auto no-scrollbar">
+                    <DialogPanel className="w-[95vw] lg:w-[60vw] max-h-[80vh] rounded-3xl border border-lightColor bg-darkColor overflow-auto no-scrollbar">
                         <div className='flex flex-row items-center justify-between text-lightColor px-5 py-3 border-b border-b-lightColor'>
-                            <div className='font-bold text-xl md:text-4xl'>{label}</div>
+                            <div className='font-bold text-xl md:text-4xl text-primaryColor'>{label}</div>
                             <FontAwesomeIcon icon={faXmark} onClick={() => setIsOpen(false)} className='cursor-pointer text-2xl' />
                         </div>
                         {page}

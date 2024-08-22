@@ -1,8 +1,8 @@
 import React from 'react'
-import Languages from '../components/About/Languages'
-import Technologies from '../components/About/Technologies'
-import Skills from '../components/About/Skills'
-import Hobbies from '../components/About/Hobbies'
+import Languages from '../components/about/Languages'
+import Technologies from '../components/about/Technologies'
+import Skills from '../components/about/Skills'
+import Hobbies from '../components/about/Hobbies'
 
 const About = () => {
 
