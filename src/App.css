@@ -12,7 +12,7 @@
 
 .light {
     --primaryColor: 64, 120, 93;
-    --darkColor: 222, 222, 222;
+    --darkColor: 218, 218, 218;
     --lightColor: 43, 43, 43;
     --bgColor: 190, 190, 190;
 }
@@ -46,6 +46,11 @@
 
     .shadow-type-3 {
         @apply shadow-none hover:shadow-custom-1 hover:shadow-primaryColor/50
+    }
+
+    /* Section subtitle */
+    .section-subtitle {
+        @apply font-bold text-2xl pl-2 border-l-8 border-l-primaryColor mb-2
     }
 
     /* Hover animation */

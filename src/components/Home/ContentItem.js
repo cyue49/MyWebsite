@@ -20,7 +20,7 @@ const ContentItem = ({ label, page }) => {
                 <div className="fixed inset-0 w-screen center-of-div bg-bgColor/70 p-4 overflow-hidden">
                     <DialogPanel className="w-[95vw] lg:w-[90vw] xl:w-[60vw] max-h-[80vh] rounded-3xl border border-lightColor bg-darkColor overflow-auto no-scrollbar shadow-type-2 hover-animation">
                         <div className='sticky top-0 bg-darkColor flex flex-row items-center justify-between text-lightColor px-4 py-3 border-b border-b-lightColor'>
-                            <div className='font-bold text-xl md:text-4xl text-primaryColor'>{label}</div>
+                            <div className='font-bold text-xl md:text-4xl text-lightColor tracking-wider'>{label}</div>
                             <FontAwesomeIcon icon={faXmark} onClick={() => setIsOpen(false)} className='cursor-pointer text-2xl shadow-type-3 hover:scale-125 hover-animation' />
                         </div>
                         {page}

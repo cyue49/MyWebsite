@@ -9,7 +9,7 @@ const Skills = () => {
 
     return (
         <div className='flex flex-col justify-center gap-2 size-fit'>
-            <div className='font-bold text-2xl'>{(language === 'en') ? 'Skills' : 'Compétances'}</div>
+            <div className='section-subtitle'>{(language === 'en') ? 'Skills' : 'Compétances'}</div>
             {skills.map((skill, index) => (
                 <div key={index} className='flex flex-col gap-2'>
                     <div className='font-bold'>{(language === 'en') ? skill.titleEN : skill.titleFR}</div>
