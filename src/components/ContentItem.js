@@ -2,14 +2,17 @@ import React, { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFolder, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faFolderOpen } from '@fortawesome/free-regular-svg-icons'
 
 const ContentItem = ({ label, page }) => {
     const [isOpen, setIsOpen] = useState(false)
+    const [isHovered, setIsHovered] = useState(false)
 
     return (
         <div>
-            <div className='flex flex-row items-center gap-4 border border-lightColor bg-darkColor opacity-55 hover:opacity-100 shadow-type-1 rounded-full py-2 px-4 min-w-40 cursor-pointer hover-animation' onClick={() => setIsOpen(true)}>
-                <FontAwesomeIcon icon={faFolder} className='text-xl' />
+            <div className='flex flex-row items-center gap-4 border border-lightColor bg-darkColor opacity-55 hover:opacity-100 shadow-type-1 rounded-full py-2 px-4 min-w-40 cursor-pointer hover-animation' onClick={() => setIsOpen(true)} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                {!isHovered ? <FontAwesomeIcon icon={faFolder} className='text-xl' /> : <FontAwesomeIcon icon={faFolderOpen} className='text-xl'/>}
+                
                 <div>{label}</div>
             </div>
 
@@ -25,7 +28,6 @@ const ContentItem = ({ label, page }) => {
                 </div>
             </Dialog>
         </div>
-
     )
 }
 
