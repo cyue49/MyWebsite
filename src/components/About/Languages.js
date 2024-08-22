@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { LanguageContext } from '../../App'
 import LanguageItem from './LanguageItem'
 
-const Languages = ({ language }) => {
+const Languages = () => {
+    const language = useContext(LanguageContext);
+
     return (
         <div className='flex flex-col justify-center gap-2'>
             <div className='font-bold text-lg'>{(language === 'en') ? 'Languages' : 'Langues'}</div>
@@ -12,7 +15,6 @@ const Languages = ({ language }) => {
                 <LanguageItem label={(language === 'en') ? 'Japanese' : 'Japonais'} percentage='40%' />
             </div>
         </div>
-
     )
 }
 

@@ -1,13 +1,17 @@
 import React from 'react'
 import Languages from '../components/About/Languages'
+import Technologies from '../components/About/Technologies'
+import Skills from '../components/About/Skills'
+import Hobbies from '../components/About/Hobbies'
 
-const About = ({ language }) => {
+const About = () => {
+
     return (
-        <div className='px-5 py-3'>
-            <Languages language={language}/>
-            <div>Techonogies</div>
-            <div>Skills</div>
-            <div>Hobbies</div>
+        <div className='px-5 py-3 flex flex-col flex-wrap justify-center gap-4'>
+            <Languages />
+            <Technologies />
+            <Skills />
+            <Hobbies />
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Experience = ({ language }) => {
+const Experience = () => {
     return (
         <div className='px-5 py-3'>
             <div>Education</div>
