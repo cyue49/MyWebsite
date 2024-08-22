@@ -2,6 +2,9 @@ import React from 'react'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import ProfileLink from '../components/ProfileLink'
 import ContentItem from '../components/ContentItem'
+import About from './About'
+import Projects from './Projects'
+import Experience from './Experience'
 
 const Home = ({ language }) => {
     const enIntro = "I completed my Bachelor of Computer Science at McGill University in May 2023 and am currently studying Mobile Application Development at John Abbott College, expecting to graduate by the end of this year. I am looking forward to putting to use what I have learned and to further developing my interest and knowledge in this field."
@@ -21,10 +24,10 @@ const Home = ({ language }) => {
                 <div className='py-2'>{language === 'en' ? enIntro : frIntro}</div>
             </div>
 
-            <div className='mx-4 px-2 py-8 lg:py-0 flex flex-row lg:flex-col items-center lg:items-start justify-start lg:min-h-80 gap-6 overflow-scroll no-scrollbar'>
-                <ContentItem label={language === 'en' ? 'About' : 'Profil'} />
-                <ContentItem label={language === 'en' ? 'Projects' : 'Projets'} />
-                <ContentItem label={language === 'en' ? 'Experience' : 'Expérience'} />
+            <div className='mx-4 px-2 py-8 lg:py-0 flex flex-row lg:flex-col gap-6 items-center lg:items-start justify-start lg:min-h-80 overflow-scroll no-scrollbar'>
+                <ContentItem label={language === 'en' ? 'About' : 'Profil'} page={<About language={language} />} />
+                <ContentItem label={language === 'en' ? 'Projects' : 'Projets'} page={<Projects language={language} />} />
+                <ContentItem label={language === 'en' ? 'Experience' : 'Expérience'} page={<Experience language={language} />} />
             </div>
         </div>
     )
