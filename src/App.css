@@ -50,11 +50,11 @@
     }
 
     /* Appear from top animation */
-    .appear-animation {
-        animation: appear-in 1s ease;
+    .appear-top-animation {
+        animation: appear-from-top 1s ease;
     }
 
-    @keyframes appear-in {
+    @keyframes appear-from-top {
         0% {
             opacity: 0;
             transform: translateY(-100%);
@@ -67,6 +67,28 @@
 
         100% {
             opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Fade in animation */
+    .appear-top-animation-50 {
+        animation: appear-from-top-50 1.3s ease;
+    }
+
+    @keyframes appear-from-top-50 {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        90% {
+            opacity: 0.5;
+            transform: translateY(10%);
+        }
+
+        100% {
+            opacity: 0.55;
             transform: translateY(0);
         }
     }

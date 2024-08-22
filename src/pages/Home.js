@@ -13,7 +13,7 @@ const Home = ({ language }) => {
 
     return (
         <div className='h-screen w-screen flex flex-row items-center justify-center content-center flex-wrap bg-grid'>
-            <div className='appear-animation max-w-3xl min-h-80 mx-4 my-8 mb-8 p-6 border border-lightColor rounded-3xl bg-darkColor shadow-type-2 flex flex-col justify-start items-start gap-4 flex-wrap hover-animation'>
+            <div className='appear-top-animation max-w-3xl min-h-80 mx-4 my-8 mb-8 p-6 border border-lightColor rounded-3xl bg-darkColor shadow-type-2 flex flex-col justify-start items-start gap-4 flex-wrap hover-animation'>
                 <div className='text-7xl font-bold text-lightColor'>Chen <span className='text-primaryColor'>Yue</span></div>
 
                 <div className='flex flex-row items-center justify-start gap-6'>
@@ -24,7 +24,7 @@ const Home = ({ language }) => {
                 <div className='py-2'>{language === 'en' ? enIntro : frIntro}</div>
             </div>
 
-            <div className='mx-4 px-2 py-8 lg:py-0 flex flex-row lg:flex-col gap-6 items-center lg:items-start justify-start lg:min-h-80 overflow-scroll no-scrollbar'>
+            <div className='mx-4 px-2 py-8 lg:py-0 flex flex-row lg:flex-col gap-6 items-center lg:items-start justify-start lg:min-h-80 overflow-scroll no-scrollbar appear-top-animation-50'>
                 <ContentItem label={language === 'en' ? 'About' : 'Profil'} page={<About language={language} />} />
                 <ContentItem label={language === 'en' ? 'Projects' : 'Projets'} page={<Projects language={language} />} />
                 <ContentItem label={language === 'en' ? 'Experience' : 'Expérience'} page={<Experience language={language} />} />
