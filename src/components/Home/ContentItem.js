@@ -11,14 +11,14 @@ const ContentItem = ({ label, page }) => {
     return (
         <div>
             <div className='flex flex-row items-center gap-4 border border-lightColor bg-darkColor opacity-55 hover:opacity-100 shadow-type-1 rounded-full py-2 px-4 min-w-40 cursor-pointer hover-animation' onClick={() => setIsOpen(true)} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-                {!isHovered ? <FontAwesomeIcon icon={faFolder} className='text-xl' /> : <FontAwesomeIcon icon={faFolderOpen} className='text-xl'/>}
-                
+                {!isHovered ? <FontAwesomeIcon icon={faFolder} className='text-xl' /> : <FontAwesomeIcon icon={faFolderOpen} className='text-xl' />}
+
                 <div>{label}</div>
             </div>
 
             <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
                 <div className="fixed inset-0 w-screen center-of-div bg-darkColor/70 p-4 overflow-hidden">
-                    <DialogPanel className="w-[95vw] lg:w-[60vw] max-h-[80vh] rounded-3xl border border-lightColor bg-darkColor overflow-auto no-scrollbar shadow-type-2">
+                    <DialogPanel className="w-[95vw] lg:w-[90vw] xl:w-[60vw] max-h-[80vh] rounded-3xl border border-lightColor bg-darkColor overflow-auto no-scrollbar shadow-type-2 hover-animation">
                         <div className='sticky top-0 bg-darkColor flex flex-row items-center justify-between text-lightColor px-4 py-3 border-b border-b-lightColor'>
                             <div className='font-bold text-xl md:text-4xl text-primaryColor'>{label}</div>
                             <FontAwesomeIcon icon={faXmark} onClick={() => setIsOpen(false)} className='cursor-pointer text-2xl' />
