@@ -7,7 +7,7 @@ export const technologies = [
     {
         en: "Web Development",
         fr: "Développement web",
-        list: ['HTML', 'CSS', 'JavaScript', 'PHP', 'JQuery', 'React', 'Node.js', 'Bootstrap', 'Tailwind']
+        list: ['HTML', 'CSS', 'JavaScript', 'PHP', 'JQuery', 'React', 'Node.js', 'Bootstrap', 'Tailwind CSS']
     },
     {
         en: "Database",

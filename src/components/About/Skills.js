@@ -6,7 +6,7 @@ const Skills = () => {
 
     return (
         <div className='flex flex-col justify-center gap-2 size-fit'>
-            <div className='font-bold text-lg'>{(language === 'en') ? 'Skills' : 'Compétances'}</div>
+            <div className='font-bold text-2xl'>{(language === 'en') ? 'Skills' : 'Compétances'}</div>
             <div>todo</div>
         </div>
     )

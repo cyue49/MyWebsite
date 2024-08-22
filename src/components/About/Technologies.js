@@ -8,7 +8,7 @@ const Technologies = () => {
 
     return (
         <div className='flex flex-col justify-center gap-2 size-fit'>
-            <div className='font-bold text-xl'>{(language === 'en') ? 'Technologies' : 'Technologies'}</div>
+            <div className='font-bold text-2xl'>{(language === 'en') ? 'Technologies' : 'Technologies'}</div>
             {technologies.map((technology, index) => (
                 <div key={index}>
                     <div className='font-bold'>{(language === 'en') ? technology.en : technology.fr}</div>
