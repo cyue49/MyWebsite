@@ -41,8 +41,8 @@ function App() {
     return (
         <LanguageContext.Provider value={language}>
             <div className='fixed top-4 left-4 z-10 flex flex-row items-center justify-start gap-4'>
-                <div className='bg-darkColor border border-lightColor rounded-full font-bold py-2 px-3 cursor-pointer uppercase hover:bg-primaryColor hover:border-primaryColor shadow-type-1 hover-animation' onClick={handleLanguage}>{language}</div>
-                <FontAwesomeIcon icon={faCircleHalfStroke} className='rounded-full bg-darkColor text-3xl text-lightColor hover:text-primaryColor cursor-pointer shadow-type-1 hover-animation' onClick={handleTheme} />
+                <div className='bg-darkColor border border-lightColor rounded-full font-bold py-2 px-3 cursor-pointer uppercase hover:bg-primaryColor hover:border-primaryColor shadow-type-1 hover:scale-110 hover-animation' onClick={handleLanguage}>{language}</div>
+                <FontAwesomeIcon icon={faCircleHalfStroke} className='rounded-full bg-darkColor text-3xl text-lightColor hover:text-primaryColor cursor-pointer shadow-type-1 hover:scale-110 hover-animation' onClick={handleTheme} />
             </div>
 
 

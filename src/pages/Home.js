@@ -27,7 +27,7 @@ const Home = () => {
                 <div className='py-2'>{language === 'en' ? enIntro : frIntro}</div>
             </div>
 
-            <div className='mx-4 px-2 py-8 lg:py-0 flex flex-row lg:flex-col gap-6 items-center lg:items-start justify-start lg:min-h-80 overflow-scroll no-scrollbar appear-top-animation-50'>
+            <div className='mx-4 px-2 py-8 lg:py-2 flex flex-row lg:flex-col gap-6 items-center lg:items-start justify-start lg:min-h-80 overflow-scroll no-scrollbar appear-top-animation-50'>
                 <ContentItem label={language === 'en' ? 'About' : 'Profil'} page={<About />} />
                 <ContentItem label={language === 'en' ? 'Projects' : 'Projets'} page={<Projects />} />
                 <ContentItem label={language === 'en' ? 'Experience' : 'Expérience'} page={<Experience />} />

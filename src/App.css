@@ -14,7 +14,7 @@
     --primaryColor: 64, 120, 93;
     --darkColor: 222, 222, 222;
     --lightColor: 43, 43, 43;
-    --bgColor: 212, 212, 212;
+    --bgColor: 190, 190, 190;
 }
 
 @layer base {
@@ -42,6 +42,10 @@
 
     .shadow-type-2 {
         @apply shadow-md shadow-primaryColor/50 hover:shadow-custom-2 hover:shadow-primaryColor/50
+    }
+
+    .shadow-type-3 {
+        @apply shadow-none hover:shadow-custom-1 hover:shadow-primaryColor/50
     }
 
     /* Hover animation */
