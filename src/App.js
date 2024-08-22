@@ -35,8 +35,8 @@ function App() {
     return (
         <div>
             <div className='fixed top-4 left-4 z-10 flex flex-row items-center justify-start gap-4'>
-                <div className='bg-darkColor border border-lightColor rounded-full font-bold py-2 px-3 cursor-pointer uppercase hover:bg-lightColor hover:text-darkColor hover:shadow-md hover:shadow-primaryColor/50 hover-animation' onClick={handleLanguage}>{language}</div>
-                <FontAwesomeIcon icon={faCircleHalfStroke} className='text-3xl text-lightColor' onClick={handleTheme} />
+                <div className='bg-darkColor border border-lightColor rounded-full font-bold py-2 px-3 cursor-pointer uppercase hover:bg-primaryColor hover:border-primaryColor shadow-type-1 hover-animation' onClick={handleLanguage}>{language}</div>
+                <FontAwesomeIcon icon={faCircleHalfStroke} className='text-3xl text-lightColor hover:text-primaryColor hover-animation' onClick={handleTheme} />
             </div>
 
 

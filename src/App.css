@@ -7,17 +7,19 @@
     --primaryColor: 64, 120, 93;
     --darkColor: 43, 43, 43;
     --lightColor: 205, 205, 205;
+    --bgColor: 33, 33, 33;
 }
 
 .light {
     --primaryColor: 64, 120, 93;
     --darkColor: 222, 222, 222;
     --lightColor: 43, 43, 43;
+    --bgColor: 212, 212, 212;
 }
 
 @layer base {
     body {
-        @apply text-lightColor bg-darkColor;
+        @apply text-lightColor bg-bgColor;
         box-sizing: border-box;
     }
 
@@ -31,6 +33,15 @@
     /* Common positions */
     .center-of-div {
         @apply flex justify-center items-center;
+    }
+
+    /* Box shadows */
+    .shadow-type-1 {
+        @apply shadow shadow-primaryColor/50 hover:shadow-custom-1 hover:shadow-primaryColor/50
+    }
+
+    .shadow-type-2 {
+        @apply shadow-md shadow-primaryColor/50 hover:shadow-custom-2 hover:shadow-primaryColor/50
     }
 
     /* Hover animation */
