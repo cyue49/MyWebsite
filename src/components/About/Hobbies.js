@@ -13,11 +13,11 @@ const Hobbies = () => {
             <ul className='flex flex-col gap-1'>
                 <li className='flex flex-row gap-4 items-center'>
                     <FontAwesomeIcon icon={faPalette} className='text-lg' />
-                    <div>Drawing</div>
+                    <div>{(language === 'en') ? 'Drawing' : 'Dessiner'}</div>
                 </li>
                 <li className='flex flex-row gap-4 items-center'>
                     <FontAwesomeIcon icon={faMusic} className='text-lg' />
-                    <div>Playing piano</div>
+                    <div>{(language === 'en') ? 'Playing piano' : 'Jouer du piano'}</div>
                 </li>
             </ul>
         </div>
