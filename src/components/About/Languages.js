@@ -6,7 +6,7 @@ const Languages = () => {
     const language = useContext(LanguageContext);
 
     return (
-        <div className='flex flex-col justify-center gap-2'>
+        <div className='flex flex-col justify-center gap-2 w-full max-w-md'>
             <div className='font-bold text-lg'>{(language === 'en') ? 'Languages' : 'Langues'}</div>
             <div className='flex flex-col justify-center gap-2'>
                 <LanguageItem label={(language === 'en') ? 'English' : 'Anglais'} percentage='100%' />

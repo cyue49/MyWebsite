@@ -7,7 +7,7 @@ import Hobbies from '../components/About/Hobbies'
 const About = () => {
 
     return (
-        <div className='px-5 py-3 flex flex-col flex-wrap justify-center gap-4'>
+        <div className='px-5 py-3 flex flex-col flex-wrap gap-4'>
             <Languages />
             <Technologies />
             <Skills />
