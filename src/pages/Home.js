@@ -3,9 +3,6 @@ import { LanguageContext } from '../App'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import ProfileLink from '../components/home/ProfileLink'
 import ContentItem from '../components/home/ContentItem'
-import About from './About'
-import Projects from './Projects'
-import Experience from './Experience'
 
 const Home = () => {
     const language = useContext(LanguageContext);
@@ -28,9 +25,9 @@ const Home = () => {
             </div>
 
             <div className='mx-4 px-2 py-8 lg:py-2 flex flex-row lg:flex-col gap-6 items-center lg:items-start justify-start lg:min-h-80 overflow-scroll no-scrollbar appear-top-animation-50'>
-                <ContentItem label={language === 'en' ? 'About' : 'Profil'} page={<About />} />
-                <ContentItem label={language === 'en' ? 'Projects' : 'Projets'} page={<Projects />} />
-                <ContentItem label={language === 'en' ? 'Experience' : 'Expérience'} page={<Experience />} />
+                <ContentItem label={language === 'en' ? 'About' : 'Profil'} path={'about'} />
+                <ContentItem label={language === 'en' ? 'Projects' : 'Projets'} path={'projects'} />
+                <ContentItem label={language === 'en' ? 'Experience' : 'Expérience'} path={'experience'} />
             </div>
         </div>
     )

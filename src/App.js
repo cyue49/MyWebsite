@@ -6,9 +6,11 @@ import {
 } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons'
-
-import './App.css';
 import Home from './pages/Home'
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Experience from './pages/Experience'
+import './App.css';
 
 export const LanguageContext = createContext()
 
@@ -49,6 +51,9 @@ function App() {
             <Router>
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/experience" element={<Experience />} />
                 </Routes>
             </Router>
         </LanguageContext.Provider>
