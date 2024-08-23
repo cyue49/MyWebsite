@@ -13,7 +13,7 @@ const TitleCard = ({ project }) => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className='w-full lg:w-[48%] flex flex-col gap-2 items-start justify-start rounded-3xl border border-lightColor/40 hover:border-lightColor hover:scale-[1.02] p-4 hover-animation'>
+        <div className='w-full lg:w-[48%] flex flex-col gap-2 items-start justify-start rounded-3xl border border-lightColor/40 hover:border-lightColor hover:scale-[1.01] p-4 hover-animation'>
             <div className='w-full flex flex-row items-start justify-between gap-2'>
                 <div className='font-bold'>{(language === 'en') ? project.en.title : project.fr.title}</div>
                 <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} className='hover:scale-125 cursor-pointer shadow-type-3' onClick={() => setIsOpen(true)} />
