@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { LanguageContext } from '../App'
 import { projects } from '../assets/data/projects'
 import TitleCard from '../components/projects/TitleCard'
@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom'
 
 const Projects = () => {
     const language = useContext(LanguageContext);
-    const [isOpen, setIsOpen] = useState(false)
 
     const navigate = useNavigate()
 
