@@ -156,6 +156,23 @@
         }
     }
 
+    /* Collapse animation */
+    .collapse-animation {
+        animation: collapse-items 0.5s ease;
+    }
+
+    @keyframes collapse-items {
+        0% {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
     /* Grid background */
     .bg-grid {
         background-size: 120px 120px;

@@ -12,10 +12,10 @@ const EducationCard = () => {
     return (
         <div className='flex flex-col justify-center gap-2 w-full'>
             <div className='section-subtitle'>{(language === 'en') ? 'Education' : 'Éducation'}</div>
-            <div className='flex flex-col gap-6 border-l border-l-primaryColor'>
+            <div className='flex flex-col gap-6 pl-2 border-l border-l-primaryColor'>
                 {schools.map((school, index) => (
                     <div key={index} className='flex flex-col gap-2 px-4'>
-                        <div className='font-bold text-lg text-primaryColor border-b border-b-primaryColor/50 w-fit'>{(language === 'en') ? school.en.name : school.fr.name}</div>
+                        <div className='font-bold text-lg border-l-4 border-l-primaryColor pl-2 text-lightColor w-fit'>{(language === 'en') ? school.en.name : school.fr.name}</div>
 
                         <div className='flex flex-row gap-2 uppercase font-bold text-sm text-lightColor/60 items-center'>
                             <FontAwesomeIcon className='resume-icon' icon={faCalendar} />
