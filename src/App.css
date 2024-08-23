@@ -125,4 +125,17 @@
         scrollbar-width: none;
         /* Firefox */
     }
+
+    /* gallery scrollbar */
+    .horizontal-scrollbar::-webkit-scrollbar {
+        @apply h-2 bg-lightColor rounded-full overflow-hidden
+    }
+
+    .horizontal-scrollbar::-webkit-scrollbar-track {
+        @apply h-2 bg-lightColor rounded-full
+    }
+
+    .horizontal-scrollbar::-webkit-scrollbar-thumb {
+        @apply h-3 bg-primaryColor rounded-full
+    }
 }
