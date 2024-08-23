@@ -80,7 +80,7 @@
         }
     }
 
-    /* Fade in animation */
+    /* Appear from top opacity 50 animation */
     .appear-top-animation-50 {
         animation: appear-from-top-50 1.3s ease;
     }
@@ -98,6 +98,23 @@
 
         100% {
             opacity: 0.55;
+            transform: translateY(0);
+        }
+    }
+
+    /* Appear from bottom animation */
+    .appear-bottom-animation {
+        animation: appear-from-bottom 1s ease;
+    }
+
+    @keyframes appear-from-bottom {
+        0% {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+
+        100% {
+            opacity: 1;
             transform: translateY(0);
         }
     }
@@ -128,14 +145,14 @@
 
     /* gallery scrollbar */
     .horizontal-scrollbar::-webkit-scrollbar {
-        @apply h-2 bg-lightColor rounded-full overflow-hidden
+        @apply h-2
     }
 
     .horizontal-scrollbar::-webkit-scrollbar-track {
-        @apply h-2 bg-lightColor rounded-full
+        @apply h-1 rounded-full 
     }
 
     .horizontal-scrollbar::-webkit-scrollbar-thumb {
-        @apply h-3 bg-primaryColor rounded-full
+        @apply h-1 bg-primaryColor rounded-full 
     }
 }

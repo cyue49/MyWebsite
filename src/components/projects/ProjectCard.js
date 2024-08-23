@@ -49,18 +49,21 @@ const ProjectCard = ({ project }) => {
 
             {/* gallery */}
             {(project.gallery.length === 0) ? null :
-                <div className='flex flex-col items-start justify-start gap-1'>
+                <div className='flex flex-col items-start justify-start gap-1 appear-bottom-animation'>
                     <div className='font-bold text-primaryColor'>{(language === 'en') ? 'Gallery: ' : 'Galerie: '}</div>
-                    <div className='p-4 flex flex-row gap-3 overflow-auto horizontal-scrollbar border rounded-xl border-lightColor'>
-                        {project.gallery.map((url, index) => (
-                            <img
-                                key={index}
-                                src={require(`../../assets/gallery/${url}`)}
-                                alt="project"
-                                className='h-[60vmin] w-auto'
-                            />
-                        ))}
+                    <div className='overflow-hidden rounded-xl'>
+                        <div className='p-4 flex flex-row gap-3 overflow-auto horizontal-scrollbar border rounded-xl border-lightColor'>
+                            {project.gallery.map((url, index) => (
+                                <img
+                                    key={index}
+                                    src={require(`../../assets/gallery/${url}`)}
+                                    alt="project"
+                                    className='h-[60vmin] w-auto'
+                                />
+                            ))}
+                        </div>
                     </div>
+
                 </div>
             }
         </div>
