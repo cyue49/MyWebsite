@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
     const language = useContext(LanguageContext);
 
     return (
-        <div className='w-full flex flex-col gap-2 items-start justify-start p-4'>
+        <div className='w-full flex flex-col gap-2 items-start justify-start p-4 appear-animation'>
             {/* technologies */}
             <BubbledList list={project.technologies} />
 

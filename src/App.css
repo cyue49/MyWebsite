@@ -60,7 +60,7 @@
 
     /* Appear from top animation */
     .appear-top-animation {
-        animation: appear-from-top 1s ease;
+        animation: appear-from-top 0.8s ease;
     }
 
     @keyframes appear-from-top {
@@ -82,7 +82,7 @@
 
     /* Appear from top opacity 50 animation */
     .appear-top-animation-50 {
-        animation: appear-from-top-50 1.3s ease;
+        animation: appear-from-top-50 1.1s ease;
     }
 
     @keyframes appear-from-top-50 {
@@ -104,7 +104,7 @@
 
     /* Appear from bottom animation */
     .appear-bottom-animation {
-        animation: appear-from-bottom 1s ease;
+        animation: appear-from-bottom 0.8s ease;
     }
 
     @keyframes appear-from-bottom {
@@ -116,6 +116,43 @@
         100% {
             opacity: 1;
             transform: translateY(0);
+        }
+    }
+
+    /* Appear in animation */
+    .appear-animation {
+        animation: appear-in 1s ease;
+    }
+
+    @keyframes appear-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* Window open animation */
+    .window-open-animation {
+        animation: window-open 0.5s ease;
+    }
+
+    @keyframes window-open {
+        0% {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        80% {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
         }
     }
 
@@ -149,10 +186,10 @@
     }
 
     .horizontal-scrollbar::-webkit-scrollbar-track {
-        @apply h-1 rounded-full 
+        @apply h-1 rounded-full
     }
 
     .horizontal-scrollbar::-webkit-scrollbar-thumb {
-        @apply h-1 bg-primaryColor rounded-full 
+        @apply h-1 bg-primaryColor rounded-full
     }
 }
