@@ -181,23 +181,5 @@ export const projects = [
                 "link": "https://github.com/cyue49/SudokuGame4x4"
             }
         ]
-    },
-    {
-        en: {
-            title: "Console Application in a Distributed System",
-            description: "This is a group project done for a distributed systems course. The project consists of working on top of a sample code to create a travel reservation system where clients can reserve Flights, Cars, and Rooms in a multi-client, multi-server distributed system.",
-            details: "The project implements RMI (Remote Method Invocation) in Java at the client side, at the server side, and at a middleware sitting in between the client and servers in order to allow multiple clients to book flights, cars, and rooms from different servers.",
-            detailsList: []
-        },
-        fr: {
-            gallery: [],
-            title: "Application console dans un système distribué",
-            description: "Ce projet s'agit d'un projet de group pour un cours sur les systèmes distribués. Le projet consiste à travailler sur un exemple de code pour créer un système de réservation de voyages où les clients peuvent réserver des vols, des voitures et des chambres dans un système distribué multi-clients et multi-serveurs.",
-            details: "Le projet implémente RMI (Remote Method Invocation) utilisant Java du côté client, côté serveur et dans un middleware situé entre le client et les serveurs afin de permettre à plusieurs clients de réserver des vols, des voitures et des chambres à partir de différents serveurs.",
-            detailsList: [],
-        },
-        technologies: ["Java", "RMI"],
-        gallery: [],
-        links: []
     }
 ]

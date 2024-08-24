@@ -63,7 +63,6 @@ const ProjectCard = ({ project }) => {
                             ))}
                         </div>
                     </div>
-
                 </div>
             }
         </div>
