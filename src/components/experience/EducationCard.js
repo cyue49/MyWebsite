@@ -25,7 +25,7 @@ const EducationCard = () => {
                         <div>{(language === 'en') ? school.en.subject : school.fr.subject}</div>
 
                         {(school.en.courses.length === 0) ? null :
-                            <CollapseList title={(language === 'en') ? 'Some Courses Taken' : 'Quesques cours suivis'} list={(language === 'en') ? school.en.courses : school.fr.courses} icon={faCheck} />
+                            <CollapseList title={(language === 'en') ? 'Some Courses Taken' : 'Quelques cours suivis'} list={(language === 'en') ? school.en.courses : school.fr.courses} icon={faCheck} />
                         }
                     </div>
                 ))}
