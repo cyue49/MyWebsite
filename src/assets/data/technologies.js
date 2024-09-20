@@ -7,7 +7,7 @@ export const technologies = [
     {
         en: "Web Development",
         fr: "Développement web",
-        list: ['HTML', 'CSS', 'JavaScript', 'PHP', 'JQuery', 'React', 'Node.js', 'Bootstrap', 'Tailwind CSS']
+        list: ['HTML', 'CSS', 'JavaScript', 'PHP', 'JQuery', 'React', 'Node.js', 'Bootstrap', 'Tailwind']
     },
     {
         en: "Mobile Development",
@@ -22,11 +22,11 @@ export const technologies = [
     {
         en: "Development Tools",
         fr: "Outils de développement",
-        list: ['GitHub', 'Intellij', 'Visual Studio Code', 'Eclipse', 'Xcode', 'Android Studio', 'Jira', 'Trello']
+        list: ['GitHub', 'Intellij', 'Visual Studio Code', 'Eclipse', 'Xcode', 'Android Studio']
     },
     {
         en: "Other Tools",
         fr: "Autres outils",
-        list: ['Adobe Creative Suite', 'Microsoft Office']
+        list: ['Jira', 'Trello', 'Adobe Creative Suite', 'Microsoft Office']
     }
 ]
